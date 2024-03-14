@@ -8,13 +8,13 @@ body {
 }
 
 header {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     color: #FFD700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -30,18 +30,16 @@ h1::after {
     animation: blink-cursor 1s infinite; 
 }
 
-@keyframes blink-cursor {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #FFD700; 
+    text-transform: uppercase;
 }
 
 section {
     text-align: left;
-    padding: 50px;
+    padding: 30px;
     background-color: #333; 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
@@ -50,20 +48,12 @@ section {
     overflow: hidden; 
 }
 
-h2 {
-    color: #FFD700; 
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
 p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
-/* Adjust the appearance of checkboxes */
 input[type="checkbox"] {
     margin-right: 10px;
     -webkit-appearance: none;
@@ -77,7 +67,6 @@ input[type="checkbox"] {
     vertical-align: middle;
 }
 
-/* Add custom styles for checked state */
 input[type="checkbox"]:checked {
     background-color: #FFD700;
 }
@@ -102,20 +91,8 @@ footer::before {
     animation: gradient 15s ease infinite;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 footer p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-style: italic;
     margin: 0;
     padding: 10px;
@@ -123,16 +100,4 @@ footer p {
     border-radius: 20px;
     animation: pulse 3s infinite;
     display: inline-block; 
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
 }
